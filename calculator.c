@@ -71,5 +71,3 @@ int main(){
 	}
 }
 
-//tentar descobrir o por que a func não aceita duas variveis ao seu chamada 
-// Devo utilizar void ou int <-- int recebe 
