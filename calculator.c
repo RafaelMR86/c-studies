@@ -44,28 +44,31 @@ int main(){
 	printf("\nQual operação gostaria de executar?\n 1- Soma \n 2- Subtrai \n 3- Multiplicar \n 4- Dividir \n 0- Sair \n");
 	scanf("%d", &i);
 	while(i!=-1){
+		
 		if(i==1){
 			soma(valor1, valor2);
 			break;
+
+		}else if(i==2){
+			subtrai(valor1, valor2);
+			break;
+		}
+		else if(i==3){
+			multiplica(valor1, valor2);
+			break;
+		}		
+		else if(i==4){
+			divide(valor1, valor2);
+			break;
+
 		}else{
-			if(i==2){
-				subtrai(valor1, valor2);
-				break;
-			}else{
-				if(i==3){
-					multiplica(valor1, valor2);
-					break;
-				}else{
-					if(i==4){
-						divide(valor1, valor2);
-						break;
-					}else{
-						printf("Nos vemos na próxima!\n");
-						break;
-					}
-				}
-			}
-	}	}
+			printf("Nos vemos na próxima!\n");
+			break;
+			
+		}
+		
+		
+	}
 }
 
 //tentar descobrir o por que a func não aceita duas variveis ao seu chamada 
